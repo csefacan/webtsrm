@@ -10,17 +10,23 @@
 <body>
     <form action="./signup-confirm.html">
         <label for="name">İsim Soyisim</label>
-        <input type="text" placeholder="İsim Giriniz" name="name">
+        <input type="text" placeholder="İsim Giriniz" name="name" id="name">
         <p></p>
-        <label for="pass">Şifreniz</label>
-        <input type="password" name="pass">
+        <label for="pass">Şifreniz</label> <input type="password" name="pass" id="pass">
         <p></p>
-        <label for="age">Yaşınız</label>
-        <input type="number" name="age" id="" value="" min="18" max="70">
+        <label for="age">Yaşınız</label> <input type="number" name="age" id="age" value="" min="18" max="70">
         <p></p>
+        <label for="sex">Cinsiyet</label> 
+        <label for="male">Erkek</label><input type="radio" name="male" id="male" value="m"> 
+        <label for="women">Kadın</label><input type="radio" name="women" id="women" value="w"> 
+        <p></p>
+        <label for="color">Renk Seçin</label> <input type="color" name="color" id="color">
+        <label for="memnuniyet">Memmuniyet Seviyesi</label> <input type="range" name="memnuniyet" id="memnuniyet">
+        <p></p>     
         <input type="submit" value="Kayıt ol!">
         <input type="reset" value="Sıfırla">
         <p></p>
+        
         <p>Bu butona tıklarsanız signup-confirm.html adlı sayfaya bilgiler gönderilecektir.</p>
     </form>
 
