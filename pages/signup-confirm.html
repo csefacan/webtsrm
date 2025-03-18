@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <script>
+        var degerler = new URLSearchParams(window.location.search);
+        var username = degerler.get("name");
+        var password = degerler.get("pass");
+
+        document.write("<p>Kayıt Onaylandı. Adınız: </p>" + username + "<p>Şifreniz:</p>" +password  );
+
+
+
+    </script>
 </body>
+
 </html>
