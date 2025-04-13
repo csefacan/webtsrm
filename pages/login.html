@@ -5,10 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
+<img src="../images/logo-transparent.png" alt="CracStation">
+<br>
+<div class="navbar">
+    <a href="../index.html">Anasayfa</a>
+    <a href="about.html">Hakkımızda</a><br><br>
+    <a href="sss.html" target="_blank">SSS</a><br><br>
+    <a href="#.html">Kayıt ol</a>
+    <a href="google.html" target="_blank">Ara</a>
+    <a href="mailto:can@yazargenclik.net">Mail At</a>
+</div>
+<br>
 <body>
-    <form action="./signup-confirm.html" method="get">
+    <div class="kayit-div">
+    <form action="./signup-confirm.html" method="get" class="kayit-formu">
         <label for="name">İsim Soyisim</label>
         <input type="text" placeholder="İsim Giriniz" name="name" id="name">
         <p></p>
@@ -16,11 +28,12 @@
         <p></p>
         <label for="age">Yaşınız</label> <input type="number" name="age" id="age" value="" min="18" max="70">
         <p></p>
-        <label for="sex">Cinsiyet</label> 
+        <label for="sex">Cinsiyet:</label> 
         <label for="male">Erkek</label><input type="radio" name="male" id="male" value="m"> 
         <label for="women">Kadın</label><input type="radio" name="women" id="women" value="w"> 
         <p></p>
         <label for="color">Renk Seçin</label> <input type="color" name="color" id="color">
+        <p></p>
         <label for="memnuniyet">Memmuniyet Seviyesi</label> <input type="range" name="memnuniyet" id="memnuniyet">
         <p></p>     
         <input type="submit" value="Kayıt ol!">
@@ -29,7 +42,7 @@
         
         <p>Bu butona tıklarsanız signup-confirm.html adlı sayfaya bilgiler gönderilecektir.</p>
     </form>
-
+</div>
 </body>
 
 </html>

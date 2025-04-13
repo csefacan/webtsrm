@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onay</title>
+</head>
+
+<body>
+    <script>
+        var degerler = new URLSearchParams(window.location.search);
+        var username = degerler.get("ad");
+        var mail = degerler.get("email");
+        var subject = degerler.get("konu");
+
+        document.write("<p>Form Onaylandı. Adınız: </p>" + username + "<p>Mailiniz:</p>" +mail+ " <p>Gönderdiğiniz metin</p>" +subject   );
+
+
+
+    </script>
+</body>
+
+</html>
