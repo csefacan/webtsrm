@@ -12,8 +12,14 @@
         var degerler = new URLSearchParams(window.location.search);
         var username = degerler.get("name");
         var password = degerler.get("pass");
+        var memmuniyet = degerler.get("memnuniyet");
+        var age = degerler.get("age");
+        var color = degerler.get("color");
+        var gender = degerler.get("gender");
 
-        document.write("<p>Kayıt Onaylandı. Adınız: </p>" + username + "<p>Şifreniz:</p>" +password  );
+
+        document.write("<p>Kayıt Onaylandı. Adınız: </p>" + username + "<p>Şifreniz:</p>" +password  + "<p>Yaşınız:</p>" +age +
+        "<p>Memmuniyet Seviyeniz:</p>" +memmuniyet+ "<p>Renginiz:</p>" +color+ "<p>Cinsiyetiniz:</p>"+gender);
 
 
 
