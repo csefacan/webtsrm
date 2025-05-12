@@ -5,25 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+    <div class="media-buttons">
+        <img src="../images/github.png" alt="github" usemap="#github">
+        <map name="github">
+
+            <area shape="rect" coords="512,512,0,0" href="https://www.github.com/csefacan" alt="Github" target="_blank">
+
+        </map>
+        <img src="../images/instagram.svg" alt="instagram" usemap="#instagram">
+        <map name="instagram">
+            <area shape="rect" coords="512,512,0,0" href="https://www.instagram.com/csefacan" alt="Instagram"
+                target="_blank">
+        </map>
+    </div>
+    <br>
+    <div class="class container">
+        <a href="../index.html"><img src="../images/logo-transparent.png" alt="Crack Station Logo"></a>
+        <h2>🧨En Güncel Crack Linkleri🧨</h2>
+    </div>
+    <br>
+    
+        <div class="navbar">
+            <a href="../index.html">Anasayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="./sss.html">SSS</a>
+            <a href="login.html">Kayıt ol</a>
+            <a href="google.html">Ara</a>
+            <a href="mailto:can@yazargenclik.net">Mail At</a>
+        </div>
+        <br>
+
     <script>
         var degerler = new URLSearchParams(window.location.search);
         var username = degerler.get("name");
         var password = degerler.get("pass");
-        var memmuniyet = degerler.get("memnuniyet");
+        var memnuniyet = degerler.get("memnuniyet");
         var age = degerler.get("age");
         var color = degerler.get("color");
         var gender = degerler.get("gender");
 
-
-        document.write("<p>Kayıt Onaylandı. Adınız: </p>" + username + "<p>Şifreniz:</p>" +password  + "<p>Yaşınız:</p>" +age +
-        "<p>Memmuniyet Seviyeniz:</p>" +memmuniyet+ "<p>Renginiz:</p>" +color+ "<p>Cinsiyetiniz:</p>"+gender);
-
-
+        /* document.write("<p>Kayıt Onaylandı. Adınız: </p>" + username + "<p>Şifreniz:</p>" + password + "<p>Yaşınız:</p>" + age +
+             "<p>Memmuniyet Seviyeniz:</p>" + memmuniyet + "<p>Renginiz:</p>" + color + "<p>Cinsiyetiniz:</p>" + gender); */
 
     </script>
+
+    <table class="kayit-onay-formu">
+        <tr>
+            <td id="adCell"></td>
+        </tr>
+        <tr>
+            <td id="passCell"></td>
+        </tr>
+        <tr>
+            <td id="yasCell"></td>
+        </tr>
+        <tr>
+            <td id="renkCell"></td>
+        </tr>
+        <tr>
+            <td id="cinsiyetCell"></td>
+        </tr>
+        <tr>
+            <td id="memnuniyetCell"></td>
+        </tr>
+    </table>
+
+<script>
+        document.getElementById("adCell").innerHTML = "Adınız: " + username;
+        document.getElementById("passCell").innerHTML = "Şifreniz: " + password;
+        document.getElementById("yasCell").innerHTML = "Yaşınız: " + age;
+        document.getElementById("renkCell").innerHTML = "Favori Renginiz: " + color;
+        document.getElementById("cinsiyetCell").innerHTML = "Cinsiyetiniz: " + gender;
+        document.getElementById("memnuniyetCell").innerHTML = "Memnuniyet: " + memnuniyet;
+</script>
+
+
+    <footer class="site-footer">
+        &copy; 2025 Crackstation. Hakları saklı maklı değildir!
+    </footer>
 </body>
 
 </html>

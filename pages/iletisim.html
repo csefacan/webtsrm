@@ -5,20 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onay</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+
+        <div class="media-buttons">
+        <img src="../images/github.png" alt="github" usemap="#github">
+        <map name="github">
+
+            <area shape="rect" coords="512,512,0,0" href="https://www.github.com/csefacan" alt="Github" target="_blank">
+
+        </map>
+        <img src="../images/instagram.svg" alt="instagram" usemap="#instagram">
+        <map name="instagram">
+            <area shape="rect" coords="512,512,0,0" href="https://www.instagram.com/csefacan" alt="Instagram"
+                target="_blank">
+        </map>
+    </div>
+    <br>
+    <div class="class container">
+        <a href="../index.html"><img src="../images/logo-transparent.png" alt="Crack Station Logo"></a>
+        <h2>🧨En Güncel Crack Linkleri🧨</h2>
+    </div>
+    <br>
+    
+        <div class="navbar">
+            <a href="../index.html">Anasayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="./sss.html">SSS</a>
+            <a href="login.html">Kayıt ol</a>
+            <a href="google.html">Ara</a>
+            <a href="mailto:can@yazargenclik.net">Mail At</a>
+        </div>
     <script>
         var degerler = new URLSearchParams(window.location.search);
         var username = degerler.get("ad");
         var mail = degerler.get("email");
         var subject = degerler.get("konu");
 
-        document.write("<p>Form Onaylandı. Adınız: </p>" + username + "<p>Mailiniz:</p>" +mail+ " <p>Gönderdiğiniz metin</p>" +subject   );
-
-
-
+       // document.write("<p>Form Onaylandı. Adınız: </p>" + username + "<p>Mailiniz:</p>" +mail+ " <p>Gönderdiğiniz metin</p>" +subject   );
     </script>
+
+        <table class="kayit-onay-formu">
+        <tr>
+            <td id="adCell"></td>
+        </tr>
+        <tr>
+            <td id="mailCell"></td>
+        </tr>
+        <tr>
+            <td id="subjectCell"></td>
+        </tr>
+    </table>
+
+
+    <script>
+        document.getElementById("adCell").innerHTML = "Kullanıcı Adınız: " + username;
+        document.getElementById("mailCell").innerHTML = "Mailiniz: " + mail;
+        document.getElementById("subjectCell").innerHTML = "Konunuz: " + subject;
+</script>
+    <footer class="site-footer">
+        &copy; 2025 Crackstation. Hakları saklı maklı değildir!
+      </footer>
 </body>
 
 </html>

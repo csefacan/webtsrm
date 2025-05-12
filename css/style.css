@@ -1,258 +1,429 @@
 /* Navbar stilini ekliyoruz */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  
-
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #1f2937;
+  font-family: sans-serif;
 }
-.navbar {
-    display: flex; /* Flexbox ile elemanları yatayda hizalayacağız */
-    background-color: #333;
-    overflow: hidden;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 10px;
-    
 
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 1200px;
+  justify-content: space-between;
 }
 
 .navbar a {
-    flex: 1; /* Her bir 'a' etiketine eşit genişlik veriyoruz */
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  min-width: 120px;
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .container {
-    text-align: center;
-    justify-content: center;
-    
-
-    
+  text-align: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 img {
-    display: block;
-    margin: 0 auto; /* Yatayda ortalamak için */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
-/*
-table, th, td { 
-    border: 1px solid black;
-
-}
-*/
-.search{
-
-display: flex;
-text-align: center;
-padding: 14x 20x;
-
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.games-table{
-
-    border:2px solid gray;
-    border-collapse: collapse;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.games-table td{
-
-    border:2px solid gray;
-    border-collapse: collapse;
-
+.games-table {
+  border: 2px solid gray;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
+  overflow-x: auto;
 }
 
-.Footer h4{
-    text-align: center;
-    justify-content: center;
-    color: #888;
-    opacity: 0.7;
-}
-.p-yazi{
-
-    text-align: center;
-    justify-content: center;
-}
-.media-buttons img{
-    margin-top: 10px;
-    width: 30px;
-    height: auto;
-    display: inline-block;
-
-}
-.media-buttons{
-    text-align: center;
+.games-table td {
+  border: 2px solid gray;
+  border-collapse: collapse;
 }
 
-.search-page img{
-width: 200px;
-height: auto;
+.Footer h4,
+.p-yazi {
+  text-align: center;
+  justify-content: center;
+  color: #888;
+  opacity: 0.7;
 }
 
-.search-page input{
-
-    display: inline-block;
-    margin-top: 20px;
-    
+.media-buttons {
+  text-align: center;
 }
-.search-page{
-    text-align: center;
-    margin-top: 30px;
 
+.media-buttons img {
+  margin-top: 10px;
+  width: 30px;
+  height: auto;
+  display: inline-block;
+}
+
+.search-page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.search-page img {
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+}
+
+.search-page input {
+  display: inline-block;
+  margin-top: 20px;
+  width: 300px;
+  max-width: 90%;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .about {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
-.about-baslik h1 {
-    text-align: center;
-    color: white;
+
+.about-baslik h1,
+.about h1 {
+  text-align: center;
+  color: white;
 }
-.about h1{
-    text-align: center;
-}
+
 .about p {
-    line-height: 1.6;
-    color: #333;
+  line-height: 1.6;
+  color: #333;
 }
+
 .highlight {
-    color: #007BFF;
-    font-weight: bold;
+  color: #007BFF;
+  font-weight: bold;
 }
 
-.kayit-div{
-     height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
-
-.kayit-formu {      
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
-  }
-
-  .kayit-formu h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .kayit-formu input[type="text"],
-  .kayit-formu input[type="email"],
-  .kayit-formu input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .kayit-formu input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  .kayit-formu input[type="reset"] {
-    width: 100%;
-    padding: 10px;
-    background-color: red;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-
+.kayit-div,
 .form-kapsayici {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kayit-formu,
+.iletisim-formu {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.kayit-formu h2,
+.iletisim-formu h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kayit-formu input[type="text"],
+.kayit-formu input[type="email"],
+.kayit-formu input[type="password"],
+.iletisim-formu input,
+.iletisim-formu textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.iletisim-formu textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.kayit-formu input[type="submit"],
+.kayit-formu input[type="reset"],
+.iletisim-formu button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.kayit-formu input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.kayit-formu input[type="reset"] {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.iletisim-formu button {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.iletisim-formu button:hover {
+  background-color: #0056b3;
+}
+
+.login-register {
+  background-image: url(../images/login-back.jpg);
+}
+
+.game-poster {
+  width: 50px;
+  height: auto;
+}
+
+.yapim-yili {
+  text-align: center;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 24px 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.site-header {
+  background-color: #f3f4f6;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-header h1 {
+  color: black;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.section-text,
+.section li,
+.requirements {
+  color: #374151;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.download {
+  text-align: center;
+}
+
+.download-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+}
+
+.download-button:hover {
+  background-color: #1d4ed8;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h2 {
+  font-size: 1.2em;
+  color: #005f99;
+}
+
+.faq-item p {
+  font-size: 1em;
+  color: #333;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.kayit-onay-tablosu {
+  border: 5px;
+}
+
+.kayit-onay-formu {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.kayit-onay-formu td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+.kayit-onay-formu tr:last-child td {
+  border-bottom: none;
+}
+
+.kayit-onay-formu td::before {
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .iletisim-formu {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 400px;
-  }
-
-  .iletisim-formu h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .iletisim-formu input,
-  .iletisim-formu textarea {
+  .navbar a {
+    flex: none;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
   }
 
-  .iletisim-formu textarea {
-    resize: vertical;
-    height: 120px;
+  .search {
+    flex-direction: column;
   }
 
-  .iletisim-formu button {
-    width: 105%;
-    padding: 12px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+  input,
+  button,
+  .download-button {
+    width: 90%;
+    min-width: unset;
   }
 
-  .iletisim-formu button:hover {
-    background-color: #0056b3;
+  .search-page input {
+    width: 90%;
   }
-  .login-register{
-    background-image: url(../images/login-back.jpg);
-
-  }
-  .game-poster{
-
-    width: 50px;
-    height: auto;
-  }
-  .yapim-yili{
-    text-align: center;
-  }
+}
