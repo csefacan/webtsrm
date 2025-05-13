@@ -8,14 +8,14 @@ body {
 }
 
 .navbar {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; 
+  flex-wrap: wrap; /* css ögelerinin kutuya nasıl sığacağı belirtilir.*/
   background-color: #333;
-  overflow: hidden;
+  overflow: hidden; /* Scrollbar engeller*/
   margin: 0 auto;
   border-radius: 10px;
   max-width: 1200px;
-  justify-content: space-between;
+  justify-content: space-between; /* bileşenlerin nerede nasıl duracakları */
 }
 
 .navbar a {
